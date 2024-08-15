@@ -6,15 +6,22 @@
              Title="Countries">
 
     <Grid RowDefinitions="Auto,*">
-        <Label Grid.Row="0" Text="Lista de países" FontSize="Body" FontAttributes="Bold"/>
-        <CollectionView Grid.Row="1" ItemsSource="{Binding CountryList}"
+        
+        <Label Grid.Row="0" Text="Lista de países" FontSize="Body" FontAttributes="Bold"/> 
+
+        <CollectionView Grid.Row="1" ItemsSource="{Binding CountryList}" SelectionMode="Single" x:Name="listMedicalCenter"
                         VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Frame CornerRadius="10">
+                    <Frame CornerRadius="10"  x:Name="Item">
                         <StackLayout>
                             <Label Text="{Binding Name}"/>
                         </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer BindingContext="{Binding Path=BindingContext, Source={x:Reference listMedicalCenter}}" 
+                                       Command="{Binding SelectedItemCommand}" 
+                                      CommandParameter="{Binding Source={x:Reference Item}, Path=BindingContext}" />
+                        </Frame.GestureRecognizers>
                     </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>

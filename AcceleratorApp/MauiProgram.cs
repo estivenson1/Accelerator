@@ -4,7 +4,9 @@ using Accelerator.Frontend.Contracts.ExternalServices;
 using Accelerator.Frontend.ExternalServices;
 using Accelerator.Frontend.Utils;
 using AcceleratorApp.ViewModels;
+using AcceleratorApp.ViewModels.PopUps;
 using AcceleratorApp.Views;
+using AcceleratorApp.Views.PopUps;
 using CommunityToolkit.Maui;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
@@ -57,6 +59,10 @@ namespace AcceleratorApp
 
             #region DependencyViewsAndViewModels
             builder.Services.AddTransientWithShellRoute<CountriesView, CountriesViewModel>(nameof(CountriesView));
+            #endregion
+
+            #region DependencyPopUps
+            //builder.Services.AddTransientPopup<GeneralPopUpView, GeneralPopUpViewModel>();
             #endregion
 
 
