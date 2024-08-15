@@ -36,7 +36,7 @@ namespace Accelerator.Backend.Application.CountryApi
 
 
             var app = builder.Build();
-            //app.UseCors(c => c.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
+            app.UseCors(c => c.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
