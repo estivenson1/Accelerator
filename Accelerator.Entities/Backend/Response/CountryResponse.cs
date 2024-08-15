@@ -1,4 +1,4 @@
-﻿namespace Accelerator.Backend.Entities.Response;
+﻿namespace Accelerator.Entities.Backend.Response;
 
 public class CountryResponse
 {

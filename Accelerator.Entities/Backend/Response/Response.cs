@@ -1,4 +1,4 @@
-﻿namespace Accelerator.Backend.Entities._1Referentials;
+﻿namespace Accelerator.Entities.Backend.Response;
 
 /// <summary>
 /// Class response transactional service

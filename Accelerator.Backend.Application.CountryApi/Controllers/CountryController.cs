@@ -1,6 +1,5 @@
 ﻿using Accelerator.Backend.Contracts.Business;
-using Accelerator.Backend.Entities._1Referentials;
-using Accelerator.Backend.Entities.Response;
+using Accelerator.Entities.Backend.Response;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Accelerator.Backend.Application.CountryApi.Controllers;

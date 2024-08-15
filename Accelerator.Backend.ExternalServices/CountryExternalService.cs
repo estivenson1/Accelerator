@@ -1,7 +1,7 @@
 ﻿using Accelerator.Backend.Contracts.ExternalServices;
 using Accelerator.Backend.Entities._1Referentials;
-using Accelerator.Backend.Entities.Response;
 using Accelerator.Backend.ExternalServices._2Proxy;
+using Accelerator.Entities.Backend.Response;
 using Microsoft.Extensions.Options;
 
 namespace Accelerator.Backend.ExternalServices;
@@ -19,7 +19,7 @@ public class CountryExternalService : ICountryExternalService
     }
     public Task<IList<CountryResponse>> GetCountries()
     {
-        var result = _proxy.Get();
+        var result = _proxy.GetCountries();
 
         return result;
     }

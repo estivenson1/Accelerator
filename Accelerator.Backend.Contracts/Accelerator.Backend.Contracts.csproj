@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Accelerator.Backend.Entities\Accelerator.Backend.Entities.csproj" />
+    <ProjectReference Include="..\Accelerator.Entities\Accelerator.Entities.csproj" />
   </ItemGroup>
 
 </Project>

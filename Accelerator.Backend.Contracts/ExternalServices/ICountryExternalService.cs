@@ -1,4 +1,6 @@
-﻿using Accelerator.Backend.Entities.Response;
+﻿
+
+using Accelerator.Entities.Backend.Response;
 
 namespace Accelerator.Backend.Contracts.ExternalServices;
 

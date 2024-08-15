@@ -1,5 +1,5 @@
-﻿using Accelerator.Backend.Entities._1Referentials;
-using Accelerator.Backend.Utils.ResponseMessages;
+﻿using Accelerator.Backend.Utils.ResponseMessages;
+using Accelerator.Entities.Backend.Response;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;

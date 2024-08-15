@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AcceleratorApp.Views.CountriesView"
+              ControlTemplate="{StaticResource TemplateAppGrid}"
+             Title="Countries">
+
+    <Grid RowDefinitions="Auto,*">
+        <Label Grid.Row="0" Text="Lista de países" FontSize="Body" FontAttributes="Bold"/>
+        <CollectionView Grid.Row="1" ItemsSource="{Binding CountryList}"
+                        VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame CornerRadius="10">
+                        <StackLayout>
+                            <Label Text="{Binding Name}"/>
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

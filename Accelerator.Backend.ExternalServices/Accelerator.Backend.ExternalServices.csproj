@@ -15,6 +15,7 @@
     <ProjectReference Include="..\Accelerator.Backend.Contracts\Accelerator.Backend.Contracts.csproj" />
     <ProjectReference Include="..\Accelerator.Backend.Entities\Accelerator.Backend.Entities.csproj" />
     <ProjectReference Include="..\Accelerator.Backend.Utils\Accelerator.Backend.Utils.csproj" />
+    <ProjectReference Include="..\Accelerator.Entities\Accelerator.Entities.csproj" />
   </ItemGroup>
 
 </Project>

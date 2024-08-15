@@ -1,6 +1,6 @@
 ﻿using Accelerator.Backend.Entities._1Referentials;
-using Accelerator.Backend.Entities.Response;
 using Accelerator.Backend.ExternalServices._1Referentials;
+using Accelerator.Entities.Backend.Response;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -18,11 +18,8 @@ namespace Accelerator.Backend.ExternalServices._2Proxy
         public CountryProxy(IOptions<List<ServiceSettings>> serviceOptions) : base(serviceOptions, "Restcountries", "all")
         {
         }  
-        //public CountryProxy(IOptions<List<ServiceSettings>> serviceOptions, string serviceName, string controllerName) : base(serviceOptions, serviceName, controllerName)
-        //{
-        //}
 
-        public async Task<IList<CountryResponse>> Get()
+        public async Task<IList<CountryResponse>> GetCountries()
         {
             var countryList = new List<CountryResponse>();
 

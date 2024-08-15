@@ -1,9 +1,8 @@
 ﻿using Accelerator.Backend.Business._1Referentials;
 using Accelerator.Backend.Contracts.Business;
 using Accelerator.Backend.Contracts.ExternalServices;
-using Accelerator.Backend.Entities._1Referentials;
-using Accelerator.Backend.Entities.Response;
 using Accelerator.Backend.Utils.ResponseMessages;
+using Accelerator.Entities.Backend.Response;
 
 namespace Accelerator.Backend.Business
 {

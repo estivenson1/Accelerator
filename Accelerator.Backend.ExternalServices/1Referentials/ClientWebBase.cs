@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.Extensions.Options;
 using Accelerator.Backend.Utils.Extensions;
+using Accelerator.Entities.Backend.Response;
 
 namespace Accelerator.Backend.ExternalServices._1Referentials;
 
